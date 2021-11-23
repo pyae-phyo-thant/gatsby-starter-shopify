@@ -83,12 +83,47 @@ export function Seo({
         sizes="180x180"
         href="/apple-touch-icon.png"
       />
+      <link
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css"
+        rel="stylesheet"
+        crossorigin="anonymous"
+      />
+      <script
+        src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
+        crossorigin="anonymous"
+      ></script>
+
+      <link
+        rel="stylesheet"
+        type="text/css"
+        href="../assets/vendor/bootstrap/css/bootstrap.min.css"
+      />
+      <link
+        rel="stylesheet"
+        type="text/css"
+        href="../assets/fonts/font-awesome-4.7.0/css/font-awesome.min.css"
+      />
+      <link
+        rel="stylesheet"
+        type="text/css"
+        href="../assets/vendor/animate/animate.css"
+      />
+      <link
+        rel="stylesheet"
+        type="text/css"
+        href="../assets/vendor/css-hamburgers/hamburgers.min.css"
+      />
+      <link
+        rel="stylesheet"
+        type="text/css"
+        href="../assets/vendor/select2/select2.min.css"
+      />
+      <link rel="stylesheet" type="text/css" href="../assets/css/util.css" />
+      <link rel="stylesheet" type="text/css" href="../assets/css/main.css" />
+
       {/* The following meta tag is for demonstration only and can be removed */}
       {!!process.env.GATSBY_DEMO_STORE && (
-        <meta
-          name="robots"
-          content="noindex, nofollow"
-        />
+        <meta name="robots" content="noindex, nofollow" />
       )}
       {children}
     </Helmet>

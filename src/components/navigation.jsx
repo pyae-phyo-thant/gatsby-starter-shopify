@@ -1,7 +1,14 @@
 import { graphql, useStaticQuery, Link } from "gatsby"
 import * as React from "react"
 import slugify from "@sindresorhus/slugify"
-import { navStyle, navLink, activeLink } from "./navigation.module.css"
+import {
+  navStyle,
+  navLink,
+  activeLink,
+  dropdown,
+  dropbtn,
+  dropdownContent,
+} from "./navigation.module.css"
 
 export function Navigation({ className }) {
   const {
@@ -34,6 +41,17 @@ export function Navigation({ className }) {
           {name}
         </Link>
       ))}
+      <div className={dropdown}>
+        <button className={dropbtn}>
+          Dropdown
+          <i className="fa fa-caret-down"></i>
+        </button>
+        <div className={dropdownContent}>
+          <a href="#">Link 1</a>
+          <a href="#">Link 2</a>
+          <a href="#">Link 3</a>
+        </div>
+      </div>
     </nav>
   )
 }

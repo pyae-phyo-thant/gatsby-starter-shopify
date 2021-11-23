@@ -26,10 +26,10 @@ export function Header() {
   return (
     <div className={container}>
       <header className={header}>
+        <Navigation className={nav} />
         <Link to="/" className={logoCss}>
           <Logo />
         </Link>
-        <Navigation className={nav} />
         <Link to="/search" className={searchButton}>
           <SearchIcon />
         </Link>

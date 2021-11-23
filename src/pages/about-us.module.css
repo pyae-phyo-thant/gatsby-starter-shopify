@@ -1,0 +1,48 @@
+.container {
+  background-color: rgb(211, 206, 206);
+}
+.title {
+  text-align: center;
+  color: #000;
+  font-weight: bold;
+  font-size: 2rem;
+  margin: 5px 0px 15px;
+}
+.titleVideo {
+  border: 1px solid #fff;
+  color: #000;
+  position: absolute;
+  padding: 17px 10px;
+}
+.titleVideo:hover {
+  color: #fff;
+  font-weight: 500;
+  background-color: #fff;
+}
+.titleDesc {
+  text-align: center;
+  font-weight: bold;
+  margin: 50px 50px;
+}
+.main {
+  width: 80%;
+  background-color: #fff;
+  margin-bottom: 40px;
+}
+.started,
+.appro {
+  display: flex;
+  justify-content: space-between;
+}
+.startedDesc,
+.ApproDesc {
+  padding: 0px 10px 0px 20px;
+}
+.startedDesc h1,
+.ApproDesc h1 {
+  font-weight: bold;
+}
+.who {
+  text-align: center;
+  margin: 60px 0px;
+}
