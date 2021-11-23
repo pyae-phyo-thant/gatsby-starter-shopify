@@ -14,7 +14,7 @@ import {
 import startedSteve from "../assets/images/steven.webp"
 import ApproSewing from "../assets/images/sewing.webp"
 
-const About = () => {
+export default About = () => {
   return (
     <Layout>
       <div className={container}>
@@ -83,5 +83,3 @@ const About = () => {
     </Layout>
   )
 }
-
-export default About

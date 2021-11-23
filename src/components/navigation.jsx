@@ -52,6 +52,22 @@ export function Navigation({ className }) {
           <a href="#">Link 3</a>
         </div>
       </div>
+      <Link
+        key="about"
+        className={navLink}
+        to="/about/"
+        activeClassName={activeLink}
+      >
+        About Us
+      </Link>
+      <Link
+        key="contact"
+        className={navLink}
+        to="/contact/"
+        activeClassName={activeLink}
+      >
+        Contact Us
+      </Link>
     </nav>
   )
 }
