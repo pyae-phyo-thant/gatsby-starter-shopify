@@ -11,16 +11,20 @@ import {
   black_fri,
   black_img,
   showNow,
-  mContainer
+  mContainer,
+  newReleased,
+  newReleasedDesc,
+  newReleasedContainer
 } from "./index.module.css"
 
 import HeroVideo from "../videos/HPHero_BFCM_3x1_02.mp4"
 import BlackFriday from "../assets/Black_friday_blurr_logo.webp"
+import newReleasedImg from '../assets/images/new-release.webp'
 import Discount from "../components/discount"
 
 export const query = graphql`
   query {
-    shopifyCollection(handle: { eq: "frontpage" }) {
+    shopifyCollection(handle: { eq: "best-sellers" }) {
       products {
         ...ProductCard
       }
@@ -79,13 +83,27 @@ function Mission() {
   return (
     <>
         <div className={mContainer}>
-          <span>Our mission</span>
+          <span>OUR MISSION</span>
           <h1>
           To outfit the world’s most <br /> ambitious people.
           </h1>
 
         </div>
     </>
+  )
+}
+
+function NewRelease() {
+  return (
+    <div className={newReleasedContainer}>
+      <a className={newReleased} href="http://localhost:8000/collections/new-releases" alt="NewReleases">
+          <img src={newReleasedImg} alt="BestSeller" />
+          <div className={newReleasedDesc}>
+              <h5>Best Sellers</h5>
+              <span>Shop Now</span>
+          </div>
+      </a> 
+    </div>
   )
 }
 
@@ -97,6 +115,7 @@ export default function IndexPage({ data }) {
       <Mission />
       <Discount />
       <ProductListing products={data?.shopifyCollection?.products} />
+      <NewRelease />
     </Layout>
   )
 }

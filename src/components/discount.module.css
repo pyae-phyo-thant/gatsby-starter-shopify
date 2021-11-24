@@ -4,6 +4,7 @@
     min-width: 0px;
     width: 100%;
     display: flex;
+    margin-bottom: 30px;
 }
 .bestCeller, .blackFri {
     text-decoration: none;

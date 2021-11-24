@@ -5,3 +5,10 @@
   gap: var(--size-gutter-raw);
   padding: 0 var(--size-gutter-raw);
 }
+.header {
+  text-align: center;
+  margin-bottom: 100px;
+  margin-top: 77px;
+  font-size: 25px;
+  font-weight: 600;
+}

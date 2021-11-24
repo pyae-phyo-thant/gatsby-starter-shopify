@@ -118,6 +118,10 @@ export function Seo({
         type="text/css"
         href="../assets/vendor/select2/select2.min.css"
       />
+      <link rel="preconnect" href="https://fonts.googleapis.com" />
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+      <link href="https://fonts.googleapis.com/css2?family=Poppins:ital@1&display=swap" rel="stylesheet" />
+
       <link rel="stylesheet" type="text/css" href="../assets/css/util.css" />
       <link rel="stylesheet" type="text/css" href="../assets/css/main.css" />
 

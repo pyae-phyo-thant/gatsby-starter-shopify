@@ -90,3 +90,28 @@
 .mContainer h1 {
   font-weight: 600;
 }
+.newReleased {
+  text-decoration: none;
+  cursor: pointer;
+}
+.newReleasedContainer {
+  position: relative;
+  margin-top: 50px;
+
+}
+.newReleasedDesc {
+  position: absolute;
+  color: #fff;
+  bottom: 0px;
+  margin: 30px;
+}
+.newReleasedDesc h5 {
+  font-weight: bold;
+  font-size: 32px;
+  margin-bottom: 18px;
+}
+.newReleasedDesc span {
+  border: 1px solid #fff;
+  padding: 11px 16px;
+  font-weight: 500;
+}
