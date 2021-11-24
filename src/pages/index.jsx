@@ -96,10 +96,10 @@ function Mission() {
 function NewRelease() {
   return (
     <div className={newReleasedContainer}>
-      <a className={newReleased} href="http://localhost:8000/collections/new-releases" alt="NewReleases">
+      <a className={newReleased} href="https://digital.gatsbyjs.io/collections/new-releases" alt="NewReleases">
           <img src={newReleasedImg} alt="BestSeller" />
           <div className={newReleasedDesc}>
-              <h5>Best Sellers</h5>
+              <h5>New Releases</h5>
               <span>Shop Now</span>
           </div>
       </a> 
