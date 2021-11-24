@@ -1,5 +1,5 @@
 import * as React from "react"
-import { graphql } from "gatsby"
+import { graphql,Link } from "gatsby"
 import { Layout } from "../components/layout"
 import { ProductListing } from "../components/product-listing"
 import {
@@ -96,13 +96,15 @@ function Mission() {
 function NewRelease() {
   return (
     <div className={newReleasedContainer}>
-      <a className={newReleased} href="https://digital.gatsbyjs.io/collections/new-releases" alt="NewReleases">
+      <Link key="new-release" to="/collections/new-releases" >
+        <div className={newReleased}>
           <img src={newReleasedImg} alt="BestSeller" />
           <div className={newReleasedDesc}>
               <h5>New Releases</h5>
               <span>Shop Now</span>
           </div>
-      </a> 
+          </div>
+      </Link> 
     </div>
   )
 }
