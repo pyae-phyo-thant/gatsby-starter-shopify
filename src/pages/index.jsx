@@ -47,7 +47,7 @@ function Hero(props) {
             <h3>30% OFF SITE-WIDE</h3>
             <h5>OUR BIGGEST SALE OF THE YEAR</h5>
             <p className={showNow}>
-              <a href="/products">Shop Now</a>
+              <Link key="products" to="/products">Shop Now</Link>
             </p>
           </div>
         </div>

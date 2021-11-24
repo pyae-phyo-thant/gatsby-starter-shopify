@@ -1,5 +1,5 @@
 import React from 'react'
-
+import { Link } from "gatsby"
 import bestSellerImg from '../assets/images/best-seller.webp'
 import blackFriImg from '../assets/images/black-fri.webp'
 
@@ -11,20 +11,24 @@ function Discount({}) {
     return (
         <>
            <div className={container}>
-               <a className={bestCeller} href="https://digital.gatsbyjs.io/collections/bestseller" alt="BestSeller">
+               <Link key="BestSeller" to="/collections/bestseller">
+                   <div className={bestCeller}>
                     <img src={bestSellerImg} alt="BestSeller" />
                     <div className={bestDesc}>
                         <h5>Best Sellers</h5>
                         <span>Shop Now</span>
                     </div>
-               </a>
-               <a className={blackFri} href="https://digital.gatsbyjs.io/collections/black-friday" alt="BlackFriday">
+                    </div>
+               </Link>
+               <Link key="black-friday" to="https://digital.gatsbyjs.io/collections/black-friday">
+                   <div className={blackFri}>
                     <img src={blackFriImg} alt="BlackFriday" />
                     <div className={BlackDesc}>
                         <h5>Black Friday Collection</h5>
                         <span>Shop Now</span>
                     </div>
-               </a>
+                    </div>
+               </Link>
             </div> 
         </>
     )
