@@ -1,0 +1,32 @@
+.container {
+    box-sizing: border-box;
+    margin: 0px;
+    min-width: 0px;
+    width: 100%;
+    display: flex;
+}
+.bestCeller, .blackFri {
+    text-decoration: none;
+    flex: 1 1 100%;
+    position: relative;
+    cursor: pointer;
+}
+.bestCeller {
+    margin-right: 25px;
+}
+.bestDesc, .BlackDesc {
+    position: absolute;
+    bottom: 13px;
+    color: #fff;
+    margin: 30px;
+}
+.bestDesc h5, .BlackDesc h5 {
+    font-weight: bold;
+    font-size: 32px;
+    margin-bottom: 18px;
+}
+.bestDesc span, .BlackDesc span {
+    border: 1px solid #fff;
+    padding: 11px 16px;
+    font-weight: 500;
+}

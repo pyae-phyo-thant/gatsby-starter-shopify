@@ -10,11 +10,20 @@ import {
   startedImg,
   appro,
   who,
+  ApproImg,
+  ApproDesc,
+  startedDescContainer,
+  ApproDescContainer
 } from "./about-us.module.css"
+import {Layout} from '../components/layout'
 import startedSteve from "../assets/images/steven.webp"
 import ApproSewing from "../assets/images/sewing.webp"
 
-export default About = () => {
+
+
+
+export default function About({data}) {
+  console.log(data)
   return (
     <Layout>
       <div className={container}>
@@ -27,6 +36,7 @@ export default About = () => {
 
         <div className={main}>
           <div className={started}>
+            <div className={startedDescContainer}>
             <div className={startedDesc}>
               <h1>How It All Started</h1>
               <p>
@@ -43,6 +53,7 @@ export default About = () => {
                 sacrificing comfort.
               </p>
             </div>
+            </div>
             <div className={startedImg}>
               <img src={startedSteve} alt="steven" />
             </div>
@@ -51,21 +62,23 @@ export default About = () => {
             <div className={ApproImg}>
               <img src={ApproSewing} alt="sewing" />
             </div>
-            <div className={ApproDesc}>
-              <h1>A Custom Approach</h1>
-              <p>
-                It wasn’t easy, but after countless hours of research and way
-                too much coffee, we custom engineered our own Pyca fabric. We
-                knew we needed something durable yet breathable which our
-                tri-blend fabric delivers and then some.
-              </p>
-              <br />
-              <p>
-                We’ve all been there before, you find a shirt that fits well but
-                then it is limited in colors, styles or even worse, it
-                disappears from existence since it is part of a one time
-                seasonal collection. We’re changing that.
-              </p>
+            <div className={ApproDescContainer}>
+              <div className={ApproDesc}>
+                <h1>A Custom Approach</h1>
+                <p>
+                  It wasn’t easy, but after countless hours of research and way
+                  too much coffee, we custom engineered our own Pyca fabric. We
+                  knew we needed something durable yet breathable which our
+                  tri-blend fabric delivers and then some.
+                </p>
+                <br />
+                <p>
+                  We’ve all been there before, you find a shirt that fits well but
+                  then it is limited in colors, styles or even worse, it
+                  disappears from existence since it is part of a one time
+                  seasonal collection. We’re changing that.
+                </p>
+              </div>
             </div>
           </div>
           <div className={who}>

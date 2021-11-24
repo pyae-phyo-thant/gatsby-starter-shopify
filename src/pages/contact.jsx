@@ -1,13 +1,15 @@
 import React from "react"
 import { Layout } from "../components/layout"
+import leftImg from '../assets/images/img-01.png'
+import './contact.css';
 
-export default Contact = () => {
+export default function Contact() {
   return (
     <Layout>
       <div className="contact1">
         <div className="container-contact1">
           <div className="contact1-pic js-tilt" data-tilt>
-            <img src="images/img-01.png" alt="IMG" />
+            <img src={leftImg} alt="IMG" />
           </div>
 
           <form className="contact1-form validate-form">

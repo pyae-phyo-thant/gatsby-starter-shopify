@@ -73,7 +73,20 @@
   cursor: pointer;
   font-weight: 600;
 }
-.black_fri p:hover {
-  color: #000;
+.showNow:hover {
   background-color: #fff;
+  color: #000!important;
+}
+.showNow a {
+  text-decoration: none;
+}
+.mContainer {
+  padding: 40px 0px 100px;
+  text-align: center;
+}
+.mContainer span {
+  text-decoration: underline;
+}
+.mContainer h1 {
+  font-weight: 600;
 }

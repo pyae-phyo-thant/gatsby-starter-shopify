@@ -4,17 +4,19 @@ import { Layout } from "../components/layout"
 import { ProductListing } from "../components/product-listing"
 import {
   container,
-  intro,
   callOut,
   callToAction,
   deployButton,
   hero_overlay,
   black_fri,
   black_img,
+  showNow,
+  mContainer
 } from "./index.module.css"
 
 import HeroVideo from "../videos/HPHero_BFCM_3x1_02.mp4"
 import BlackFriday from "../assets/Black_friday_blurr_logo.webp"
+import Discount from "../components/discount"
 
 export const query = graphql`
   query {
@@ -26,6 +28,7 @@ export const query = graphql`
   }
 `
 function Hero(props) {
+
   return (
     <>
       <div>
@@ -39,8 +42,8 @@ function Hero(props) {
             </div>
             <h3>30% OFF SITE-WIDE</h3>
             <h5>OUR BIGGEST SALE OF THE YEAR</h5>
-            <p>
-              <a href="">Shop Now</a>
+            <p className={showNow}>
+              <a href="/products">Shop Now</a>
             </p>
           </div>
         </div>
@@ -71,10 +74,28 @@ function Hero(props) {
   )
 }
 
+function Mission() {
+
+  return (
+    <>
+        <div className={mContainer}>
+          <span>Our mission</span>
+          <h1>
+          To outfit the world’s most <br /> ambitious people.
+          </h1>
+
+        </div>
+    </>
+  )
+}
+
 export default function IndexPage({ data }) {
+
   return (
     <Layout>
       <Hero />
+      <Mission />
+      <Discount />
       <ProductListing products={data?.shopifyCollection?.products} />
     </Layout>
   )

@@ -23,15 +23,18 @@ export function Navigation({ className }) {
 
   return (
     <nav className={[navStyle, className].join(" ")}>
-      <Link
-        key="All"
+      <div className={dropdown}>
+        <Link 
+        key='All'
         className={navLink}
-        to="/products/"
+        to='/products'
         activeClassName={activeLink}
-      >
-        All products
-      </Link>
-      {productTypes.map((name) => (
+        >
+          Products
+          <i className="fa fa-caret-down"></i>
+        </Link>
+        <div className={dropdownContent}>
+        {productTypes.map((name) => (
         <Link
           key={name}
           className={navLink}
@@ -41,15 +44,6 @@ export function Navigation({ className }) {
           {name}
         </Link>
       ))}
-      <div className={dropdown}>
-        <button className={dropbtn}>
-          Dropdown
-          <i className="fa fa-caret-down"></i>
-        </button>
-        <div className={dropdownContent}>
-          <a href="#">Link 1</a>
-          <a href="#">Link 2</a>
-          <a href="#">Link 3</a>
         </div>
       </div>
       <Link

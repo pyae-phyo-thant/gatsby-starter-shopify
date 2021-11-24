@@ -1,21 +1,23 @@
-.container {
-  background-color: rgb(211, 206, 206);
+.container, .who {
+  background-color: rgb(241 236 236 / 25%)
 }
 .title {
   text-align: center;
   color: #000;
   font-weight: bold;
-  font-size: 2rem;
+  font-size: 4rem;
   margin: 5px 0px 15px;
 }
 .titleVideo {
   border: 1px solid #fff;
   color: #000;
-  position: absolute;
-  padding: 17px 10px;
+width: fit-content;
+margin: 0 auto;
+  padding: 10px 20px;
+  cursor: pointer;
 }
 .titleVideo:hover {
-  color: #fff;
+  color: #000;
   font-weight: 500;
   background-color: #fff;
 }
@@ -23,9 +25,16 @@
   text-align: center;
   font-weight: bold;
   margin: 50px 50px;
+  font-size: 23px;
+    color: #000;
+}
+.startedDescContainer {
+  position: relative;
+  width: 77%;
 }
 .main {
-  width: 80%;
+  width: 95%;
+  margin: 0 auto;
   background-color: #fff;
   margin-bottom: 40px;
 }
@@ -34,9 +43,21 @@
   display: flex;
   justify-content: space-between;
 }
+.ApproImg img {
+  width: 97%!important;
+}
+
+.startedDesc p {
+  font-size: 16px;
+}
+.ApproDescContainer {
+  position: relative;
+}
+
 .startedDesc,
 .ApproDesc {
   padding: 0px 10px 0px 20px;
+  margin-top: 143px;
 }
 .startedDesc h1,
 .ApproDesc h1 {
@@ -45,4 +66,7 @@
 .who {
   text-align: center;
   margin: 60px 0px;
+}
+.who {
+  padding: 80px;
 }
