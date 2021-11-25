@@ -1,0 +1,14 @@
+.collecHeader {
+    color: #9f9a9a;
+    font-size: 14px;
+    font-weight: bold;
+}
+.link {
+    font-weight: bold;
+    font-size: 20px;
+    padding: 10px 0px;
+}
+.link li a {
+    text-decoration: none;
+    color: #000;
+}

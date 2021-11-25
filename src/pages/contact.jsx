@@ -1,11 +1,22 @@
-import React from "react"
+import * as React from "react"
 import { Layout } from "../components/layout"
+import Loading from "../components/loading";
 import leftImg from '../assets/images/img-01.png'
 import './contact.css';
 
 export default function Contact() {
+  const [loading, setLoading] = React.useState(false)
+
+  React.useEffect(() => {
+    setLoading(true)
+      setInterval(() => {
+        setLoading(false)
+      }, 2000);
+  },[])
+
   return (
-    <Layout>
+    loading ? <Loading /> : (
+      <Layout>
       <div className="contact1">
         <div className="container-contact1">
           <div className="contact1-pic js-tilt" data-tilt>
@@ -78,5 +89,6 @@ export default function Contact() {
         </div>
       </div>
     </Layout>
+    )
   )
 }

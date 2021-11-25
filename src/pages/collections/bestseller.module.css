@@ -1,0 +1,41 @@
+.hero_overlay {
+    position: relative;
+    justify-content: center;
+    display: flex;
+    margin-bottom: 60px;
+  }
+.black_fri {
+    position: absolute;
+    top: 76px;
+    color: #fff;
+    text-align: center;
+}
+.black_img img {
+    width: 51%;
+    margin: 0 auto;
+}
+.black_fri h5 {
+    font-size: 30px;
+    font-weight: bold;
+}
+.flex {
+  display: flex;
+  margin: 0 auto;
+  justify-content: space-between;
+  width: 94%;
+}
+@media screen and (max-width: 600px) and (min-width: 320px) {
+  .hero_overlay video {
+    object-fit: cover;
+    height: 300px;
+  }
+  .black_img img {
+    width: 80%;
+  }
+  .black_fri h3 {
+    font-size: 2rem;
+  }
+  .black_fri h5 {
+    font-size: 16px;
+  }
+}

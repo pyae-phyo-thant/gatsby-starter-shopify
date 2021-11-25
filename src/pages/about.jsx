@@ -1,5 +1,5 @@
-import React from "react"
-
+import * as React from "react"
+import Loading from "../components/loading"
 import {
   titleVideo,
   title,
@@ -8,7 +8,6 @@ import {
   main,
   startedDesc,
   started,
-  startedImg,
   appro,
   who,
   ApproImg,
@@ -23,10 +22,19 @@ import ApproSewing from "../assets/images/sewing.webp"
 
 
 
-export default function About({data}) {
-  console.log(data)
+export default function About() {
+  const [loading, setLoading] = React.useState(false)
+
+  React.useEffect(() => {
+    setLoading(true)
+      setInterval(() => {
+        setLoading(false)
+      }, 2000);
+  },[]);
+
   return (
-    <Layout>
+    loading ? <Loading /> : (
+      <Layout>
       <div className={container}>
         <h1 className={title}>Our Story</h1>
         <p className={titleVideo}>Watch Video</p>
@@ -55,7 +63,7 @@ export default function About({data}) {
               </p>
             </div>
             </div>
-            <div className={startedImg}>
+            <div>
               <img src={startedSteve} alt="steven" />
             </div>
           </div>
@@ -95,5 +103,6 @@ export default function About({data}) {
         </div>
       </div>
     </Layout>
+    )
   )
 }

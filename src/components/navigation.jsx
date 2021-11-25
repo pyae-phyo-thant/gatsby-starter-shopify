@@ -6,10 +6,10 @@ import {
   navLink,
   activeLink,
   dropdown,
-  dropbtn,
   dropdownContent,
 } from "./navigation.module.css"
 
+// Get data from graphql API
 export function Navigation({ className }) {
   const {
     allShopifyProduct: { productTypes },

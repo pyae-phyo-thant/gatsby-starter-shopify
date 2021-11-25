@@ -14,14 +14,17 @@ import {
   mContainer,
   newReleased,
   newReleasedDesc,
-  newReleasedContainer
+  newReleasedContainer,
+  header
 } from "./index.module.css"
 
 import HeroVideo from "../videos/HPHero_BFCM_3x1_02.mp4"
 import BlackFriday from "../assets/Black_friday_blurr_logo.webp"
 import newReleasedImg from '../assets/images/new-release.webp'
 import Discount from "../components/discount"
+import Loading from '../components/loading'
 
+//Get data from graphql api 
 export const query = graphql`
   query {
     shopifyCollection(handle: { eq: "best-sellers" }) {
@@ -47,7 +50,7 @@ function Hero(props) {
             <h3>30% OFF SITE-WIDE</h3>
             <h5>OUR BIGGEST SALE OF THE YEAR</h5>
             <p className={showNow}>
-              <Link key="products" to="/products">Shop Now</Link>
+              <Link key="products" to="/products" style={{color: '#fff'}}>Shop Now</Link>
             </p>
           </div>
         </div>
@@ -110,14 +113,28 @@ function NewRelease() {
 }
 
 export default function IndexPage({ data }) {
+  const [loading, setLoading] = React.useState(false)
+
+  React.useEffect(() => {
+    setLoading(true)
+      setInterval(() => {
+        setLoading(false)
+      }, 2000);
+  },[])
 
   return (
-    <Layout>
-      <Hero />
-      <Mission />
-      <Discount />
-      <ProductListing products={data?.shopifyCollection?.products} />
-      <NewRelease />
-    </Layout>
+    
+      loading ? <Loading /> : (
+        <Layout>
+        <Hero />
+        <Mission />
+        <Discount />
+        <h1 className={header}>Best Sellers</h1>
+        <ProductListing products={data?.shopifyCollection?.products} />
+        <NewRelease />
+      </Layout>
+      )
+    
+    
   )
 }
