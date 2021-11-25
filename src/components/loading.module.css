@@ -4,3 +4,8 @@
     margin: 0 auto;
     margin-top: 150px;
 }
+@media screen and (max-width: 600px) and (min-width: 320px) {
+    .loadingClass img {
+        width: 15%;
+    }
+}

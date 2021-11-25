@@ -219,7 +219,11 @@ textarea.input1 + .shadow-input1 {
   z-index: 1;
   margin-bottom: 20px;
 }
-
+@media screen and (max-width: 600px) and (min-width: 320px) {
+  .wrap-input1 {
+    position: inherit;
+  }
+}
 .input1 {
   display: block;
   width: 100%;
