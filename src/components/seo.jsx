@@ -1,5 +1,5 @@
 import * as React from "react"
-import { Helmet } from "react-helmet"
+import { Helmet,withPrefix } from "react-helmet"
 import { useStaticQuery, graphql } from "gatsby"
 import { useLocation } from "@reach/router"
 
@@ -83,15 +83,8 @@ export function Seo({
         sizes="180x180"
         href="/apple-touch-icon.png"
       />
-      <link
-        href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css"
-        rel="stylesheet"
-        crossorigin="anonymous"
-      />
-      <script
-        src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
-        crossorigin="anonymous"
-      ></script>
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous" />
+
 
       <link
         rel="stylesheet"
@@ -125,10 +118,10 @@ export function Seo({
       <link rel="stylesheet" type="text/css" href="../assets/css/util.css" />
       <link rel="stylesheet" type="text/css" href="../assets/css/main.css" />
 
-      {/* The following meta tag is for demonstration only and can be removed */}
-      {!!process.env.GATSBY_DEMO_STORE && (
-        <meta name="robots" content="noindex, nofollow" />
-      )}
+      <script src="https://use.fontawesome.com/5e28dc330f.js" crossorigin="anonymous"></script>
+      <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" crossorigin="anonymous"></script>
+      {/* <script src={withPrefix('popper.js')} type="text/javascript"></script> */}
+      {/* <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" crossorigin="anonymous"></script> */}
       {children}
     </Helmet>
   )

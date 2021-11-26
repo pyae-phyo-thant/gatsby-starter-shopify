@@ -40,13 +40,13 @@ import {
   emptyState,
 } from "./search-page.module.css"
 
-const DEFAULT_PRODUCTS_PER_PAGE = 24
+// let DEFAULT_PRODUCTS_PER_PAGE = 24
 
 export async function getServerData({ query, ...rest }) {
   const { getSearchResults } = require("../utils/search")
   const products = await getSearchResults({
     query,
-    count: DEFAULT_PRODUCTS_PER_PAGE,
+    count: 20,
   })
 
   return {
@@ -104,7 +104,7 @@ function SearchPage({
     },
     sortKey,
     false,
-    DEFAULT_PRODUCTS_PER_PAGE,
+    20,
     serverData.products,
     initialFilters
   )

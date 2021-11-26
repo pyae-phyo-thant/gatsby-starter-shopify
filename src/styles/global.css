@@ -1,6 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,500;1,400&display=swap');
 body {
-  font-family: 'Poppins', sans-serif;;
+  font-family: 'Roboto', sans-serif;
   color: var(--text-color);
+}
+html {
+  font-family: 'Roboto', sans-serif;
 }
 
 .gatsby-image-wrapper {
@@ -9,4 +13,11 @@ body {
 
 .gatsby-image-wrapper [data-main-image] {
   border-radius: var(--radius-sm);
+}
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
 }

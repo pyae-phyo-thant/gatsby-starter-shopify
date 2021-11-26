@@ -77,3 +77,10 @@
 .searchButton[aria-current="page"] {
   color: var(--primary);
 }
+@media screen and (max-width: 600px) and (min-width: 320px) {
+  .logo {
+    grid-area: auto;
+    width: 89%;
+    position: absolute;
+  }
+}
