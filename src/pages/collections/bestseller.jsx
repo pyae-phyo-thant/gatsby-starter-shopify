@@ -23,7 +23,7 @@ function Hero() {
     <>
       <div className={hero_overlay}>
         <video loop autoPlay muted>
-          <source src={HeroVideo} type="video/mp4" />
+          <source src={HeroVideo} type="video/webm" />
         </video>
         <div className={black_fri}>
           <div className={black_img}>
