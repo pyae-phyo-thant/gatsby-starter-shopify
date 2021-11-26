@@ -22,7 +22,7 @@ import {
   seeMore
 } from "./index.module.css"
 
-import HeroVideo from "../videos/HPHero_BFCM_3x1_02.webm"
+import HeroVideo from "../videos/HPHero_BFCM_3x1_02.mp4"
 import BlackFriday from "../assets/Black_friday_blurr_logo.webp"
 import newReleasedImg from '../assets/images/new-release.webp'
 
@@ -43,7 +43,7 @@ function Hero(props) {
       <div>
         <div className={hero_overlay}>
           <video loop autoPlay muted>
-            <source src={HeroVideo} type="video/webm" />
+            <source src={HeroVideo} type="video/mp4" />
           </video>
           <div className={black_fri}>
             <div className={black_img}>
