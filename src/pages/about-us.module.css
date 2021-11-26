@@ -30,7 +30,7 @@ margin: 0 auto;
 }
 .startedDescContainer {
   position: relative;
-  width: 77%;
+  width: 74%;
 }
 .main {
   width: 95%;
@@ -44,7 +44,7 @@ margin: 0 auto;
   justify-content: space-between;
 }
 .ApproImg img {
-  width: 97%!important;
+  width: 100%!important;
 }
 
 .startedDesc p {

@@ -20,4 +20,8 @@ li {
 
 a {
   text-decoration: none;
+  font-family: 'Roboto', sans-serif!important;
+}
+p {
+  font-family: 'Roboto', sans-serif!important;
 }
