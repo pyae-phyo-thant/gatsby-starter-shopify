@@ -22,7 +22,7 @@ import {
   seeMore
 } from "./index.module.css"
 
-import HeroVideo from "../videos/HPHero_BFCM_3x1_02.mp4"
+import HeroVideo from "../videos/HPHero_BFCM_3x1_02.webm"
 import BlackFriday from "../assets/Black_friday_blurr_logo.webp"
 import newReleasedImg from '../assets/images/new-release.webp'
 

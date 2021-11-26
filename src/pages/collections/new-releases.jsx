@@ -5,7 +5,7 @@ import { ProductListing } from "../../components/product-listing"
 
 import {  hero_overlay, black_fri, black_img,flex } from './bestseller.module.css'
 import BlackFridayImg from '../../assets/images/Black_friday_Collection_Logo.webp'
-import HeroVideo from "../../videos/HPHero_BFCM_3x1_02.mp4"
+import HeroVideo from "../../videos/HPHero_BFCM_3x1_02.webm"
 import ProductSideBar from '../../components/product-sidebar'
 
 export const query = graphql`
