@@ -8,7 +8,6 @@ import {
   activeLink,
   dropdown,
   dropdownContent,
-  iconBar
 } from "./navigation.module.css"
 import './mobile-menu.css'
 
@@ -70,11 +69,11 @@ export function Navigation({ className }) {
     </nav>
 
       {/* Mobile Nav */}
-      <header class="header">
+      <header className="header">
 
-        <input class="menu-btn" type="checkbox" id="menu-btn" />
-        <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
-        <ul class="menu">
+        <input className="menu-btn" type="checkbox" id="menu-btn" />
+        <label className="menu-icon" htmlFor="menu-btn"><span className="navicon"></span></label>
+        <ul className="menu">
           <li>
             <div className={dropdown}>
               <Link 

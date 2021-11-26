@@ -1,6 +1,6 @@
 import * as React from "react"
-import { Helmet,withPrefix } from "react-helmet"
-import { useStaticQuery, graphql } from "gatsby"
+import { Helmet, } from "react-helmet"
+import { useStaticQuery, graphql, withPrefix } from "gatsby"
 import { useLocation } from "@reach/router"
 
 export function Seo({
@@ -116,7 +116,7 @@ export function Seo({
       <link href="https://fonts.googleapis.com/css2?family=Poppins:ital@1&display=swap" rel="stylesheet" />
 
       <link rel="stylesheet" type="text/css" href="../assets/css/util.css" />
-      <link rel="stylesheet" type="text/css" href="../assets/css/main.css" />
+      <link rel="stylesheet" type="text/css" href={withPrefix('/assets/css/main.css')} />
 
       <script src="https://use.fontawesome.com/5e28dc330f.js" crossorigin="anonymous"></script>
       <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" crossorigin="anonymous"></script>

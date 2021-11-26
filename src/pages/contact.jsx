@@ -2,6 +2,7 @@ import * as React from "react"
 import { Layout } from "../components/layout"
 import Loading from "../components/loading";
 import leftImg from '../assets/images/img-01.png'
+
 import './contact.css';
 
 export default function Contact() {

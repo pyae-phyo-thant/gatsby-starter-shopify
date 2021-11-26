@@ -2,6 +2,9 @@ import * as React from "react"
 import { graphql,Link } from "gatsby"
 import { Layout } from "../components/layout"
 import { ProductListing } from "../components/product-listing"
+import Discount from "../components/discount"
+import Loading from '../components/loading'
+
 import {
   container,
   callOut,
@@ -22,8 +25,6 @@ import {
 import HeroVideo from "../videos/HPHero_BFCM_3x1_02.mp4"
 import BlackFriday from "../assets/Black_friday_blurr_logo.webp"
 import newReleasedImg from '../assets/images/new-release.webp'
-import Discount from "../components/discount"
-import Loading from '../components/loading'
 
 //Get data from graphql api 
 export const query = graphql`
@@ -125,7 +126,7 @@ export default function IndexPage({ data }) {
       }, 2000);
 
       setProductLength(data?.shopifyCollection?.products)
-  },[])
+  },[data?.shopifyCollection?.products])
 
   if(productLength.length > 3) {
     let products = productLength.slice(0,2)

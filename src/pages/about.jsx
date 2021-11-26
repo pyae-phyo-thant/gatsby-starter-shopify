@@ -1,5 +1,8 @@
 import * as React from "react"
 import Loading from "../components/loading"
+import { Layout } from '../components/layout'
+import startedSteve from "../assets/images/steven.webp"
+import ApproSewing from "../assets/images/sewing.webp"
 import {
   titleVideo,
   title,
@@ -15,12 +18,6 @@ import {
   startedDescContainer,
   ApproDescContainer
 } from "./about-us.module.css"
-import {Layout} from '../components/layout'
-import startedSteve from "../assets/images/steven.webp"
-import ApproSewing from "../assets/images/sewing.webp"
-
-
-
 
 export default function About() {
   const [loading, setLoading] = React.useState(false)
