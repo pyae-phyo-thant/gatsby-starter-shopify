@@ -7,6 +7,7 @@ import { MoreButton } from "../../components/more-button"
 import { title } from "./index.module.css"
 
 export default function Products({ data: { products } }) {
+  console.log(products)
   return (
     <Layout>
       <Seo title="All Products" />
@@ -23,7 +24,7 @@ export const query = graphql`
   {
     products: allShopifyProduct(
       sort: { fields: publishedAt, order: ASC }
-      limit: 24
+      limit: 6
     ) {
       nodes {
         ...ProductCard

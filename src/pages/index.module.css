@@ -123,6 +123,21 @@
   font-size: 25px;
   font-weight: 600;
 }
+.seeMore {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  border: 1px solid #007bff;
+  width: fit-content;
+  margin: 0 auto;
+  padding: 10px 20px;
+  border-radius: 10px;
+}
+.seeMore:hover {
+  background-color: #075bb6;
+  color: #fff;
+  text-decoration: none;
+}
 @media screen and (max-width: 600px) and (min-width: 320px) {
   .hero_overlay video {
     object-fit: cover;

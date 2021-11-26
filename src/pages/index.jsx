@@ -15,7 +15,8 @@ import {
   newReleased,
   newReleasedDesc,
   newReleasedContainer,
-  header
+  header,
+  seeMore
 } from "./index.module.css"
 
 import HeroVideo from "../videos/HPHero_BFCM_3x1_02.mp4"
@@ -115,12 +116,21 @@ function NewRelease() {
 export default function IndexPage({ data }) {
   const [loading, setLoading] = React.useState(false)
 
+  const [productLength, setProductLength] = React.useState([])
+
   React.useEffect(() => {
     setLoading(true)
       setInterval(() => {
         setLoading(false)
       }, 2000);
+
+      setProductLength(data?.shopifyCollection?.products)
   },[])
+
+  if(productLength.length > 3) {
+    let products = productLength.slice(0,2)
+    setProductLength(products)
+  }
 
   return (
     
@@ -130,7 +140,14 @@ export default function IndexPage({ data }) {
         <Mission />
         <Discount />
         <h1 className={header}>Best Sellers</h1>
-        <ProductListing products={data?.shopifyCollection?.products} />
+        <ProductListing products={productLength} />
+        <Link
+          key='seemore'
+          className={seeMore}
+          to="/collections/bestseller"
+        >
+          See More
+        </Link>
         <NewRelease />
       </Layout>
       )

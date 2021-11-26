@@ -44,6 +44,7 @@ export function ProductCard({ product, eager }) {
     }
   }
 
+
   const hasImage = firstImage || Object.getOwnPropertyNames(storefrontImageData || {}).length
 
   return (
@@ -59,6 +60,7 @@ export function ProductCard({ product, eager }) {
               alt={firstImage?.altText ?? title}
               image={firstImage?.gatsbyImageData ?? storefrontImageData}
               loading={eager ? "eager" : "lazy"}
+              
             />
           </div>
         ) : (
