@@ -13,7 +13,7 @@ function Discount() {
            <div className={container}>
                <Link key="BestSeller" to="/collections/bestseller">
                    <div className={bestCeller}>
-                        <img src={bestSellerImg} alt="BestSeller" />
+                        <img src={bestSellerImg} width="1500" height="260" alt="BestSeller" />
                         <div className={bestDesc}>
                             <h5>Best Sellers</h5>
                             <span>Shop Now</span>
@@ -22,7 +22,7 @@ function Discount() {
                </Link>
                <Link key="black-friday" to="/collections/black-friday">
                    <div className={blackFri}>
-                        <img src={blackFriImg} alt="BlackFriday" />
+                        <img src={blackFriImg} width="1500" height="260" alt="BlackFriday" />
                         <div className={BlackDesc}>
                             <h5>Black Friday Collection</h5>
                             <span>Shop Now</span>
