@@ -50,8 +50,8 @@ function Hero(props) {
             </div>
             <h3>30% OFF SITE-WIDE</h3>
             <h5>OUR BIGGEST SALE OF THE YEAR</h5>
-            <p className={showNow}>
-              <Link key="products" to="/products" style={{color: '#fff'}}>Shop Now</Link>
+            <p>
+              <Link key="products" to="/products" className={showNow} >Shop Now</Link>
             </p>
           </div>
         </div>

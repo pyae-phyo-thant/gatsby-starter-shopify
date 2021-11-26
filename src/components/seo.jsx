@@ -120,8 +120,6 @@ export function Seo({
 
       <script src="https://use.fontawesome.com/5e28dc330f.js" crossorigin="anonymous"></script>
       <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" crossorigin="anonymous"></script>
-      {/* <script src={withPrefix('popper.js')} type="text/javascript"></script> */}
-      {/* <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" crossorigin="anonymous"></script> */}
       {children}
     </Helmet>
   )
